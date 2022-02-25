@@ -1,0 +1,68 @@
+{
+	"generate_features": true,
+	"bonus_chest": false,
+	"seed": 0,
+	"dimensions": {
+		"minecraft:void": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:the_void",
+					"lakes": false,
+					"features": false,
+					"layers": [],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:flat": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:the_void",
+					"lakes": false,
+					"features": true,
+					"layers": [
+						{
+							"block": "minecraft:stone",
+							"height": 100
+						}
+					],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:overworld": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:plains",
+					"lakes": false,
+					"features": true,
+					"layers": [
+						{
+							"block": "minecraft:stone_bricks",
+							"height": 1
+						}
+					],
+					"structures": {
+						"structures": {
+							"minecraft:shipwreck": {
+								"spacing": 10,
+								"separation": 5,
+								"salt": 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

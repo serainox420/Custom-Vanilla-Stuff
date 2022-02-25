@@ -1,0 +1,158 @@
+{
+	"generate_features": true,
+	"bonus_chest": false,
+	"seed": 0,
+	"dimensions": {
+		"minecraft:void": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:the_void",
+					"lakes": false,
+					"features": false,
+					"layers": [],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:flat": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:the_void",
+					"lakes": false,
+					"features": true,
+					"layers": [
+						{
+							"block": "minecraft:stone",
+							"height": 100
+						}
+					],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:overworld": {
+			"type": "minecraft:overworld",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:plains",
+					"lakes": false,
+					"features": true,
+					"layers": [
+						{
+							"block": "minecraft:stone_bricks",
+							"height": 1
+						}
+					],
+					"structures": {
+						"structures": {
+							"minecraft:shipwreck": {
+								"spacing": 10,
+								"separation": 5,
+								"salt": 0
+							}
+						}
+					}
+				}
+			}
+		},
+		"minecraft:library": {
+			"type": "minecraft:the_end",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:dark_forest",
+					"lakes": false,
+					"features": false,
+					"layers": [
+						{
+							"block": "minecraft:quartz_bricks",
+							"height": 4
+						}
+					],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:hazard": {
+			"type": "minecraft:the_nether",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:soul_sand_valley",
+					"lakes": false,
+					"features": false,
+					"layers": [
+						{
+							"block": "minecraft:netherrack",
+							"height": 4
+						}
+					],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:the_end": {
+			"type": {
+				"ultrawarm": false,
+				"natural": false,
+				"piglin_safe": false,
+				"respawn_anchor_works": true,
+				"bed_works": true,
+				"has_raids": true,
+				"has_skylight": false,
+				"has_ceiling": true,
+				"coordinate_scale": 0.00001,
+				"ambient_light": 6,
+				"fixed_time": 6000,
+				"logical_height": 256,
+				"effects": "minecraft:the_end",
+				"infiniburn": "minecraft:infiniburn_end",
+				"min_y": 0,
+				"height": 256
+			},
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:the_void",
+					"lakes": false,
+					"features": false,
+					"layers": [],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		},
+		"minecraft:the_nether": {
+			"type": "minecraft:the_end",
+			"generator": {
+				"type": "minecraft:flat",
+				"settings": {
+					"biome": "minecraft:dark_forest",
+					"layers": [
+						{
+							"block": "minecraft:tinted_glass",
+							"height": 4
+						}
+					],
+					"structures": {
+						"structures": {}
+					}
+				}
+			}
+		}
+	}
+}
